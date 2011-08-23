@@ -34,16 +34,16 @@ app.get('/',function(req,res){
 app.get('/blogs', function(req, res){
   Blog.find({}, function(err, docs) {
     res.render('blogs/index', {
-      title: 'List of Articles',
+      title: 'List of Blogs',
       blogs: docs
     });
   });
 });
 
 // New article
-app.get('/articles/new', function(req, res){
-  res.render('articles/new', {
-    title: 'New Article'
+app.get('/blogs/new', function(req, res){
+  res.render('blogs/new', {
+    title: 'New Blog'
   });
 });
 
