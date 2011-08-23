@@ -40,5 +40,6 @@ app.get('/blogs', function(req, res){
   });
 });
 
+app.get();
 app.listen(3000);
 
