@@ -68,5 +68,15 @@ app.post('/blogs', function(req, res){
 
 });
 
+// View an article
+app.get('/blogs/:id', function(req, res){
+  Blog.findOne({_id:req.params.id}, function(err,blog){
+    res.render('blogs/show', {
+      title: blog.title,
+      blog: blog.doc
+    });
+  });
+});
+
 app.listen(3000);
 
