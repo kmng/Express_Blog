@@ -40,7 +40,7 @@ app.get('/blogs', function(req, res){
   });
 });
 
-// New article
+// New blog
 app.get('/blogs/new', function(req, res){
   res.render('blogs/new', {
     title: 'New Blog'
