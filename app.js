@@ -35,7 +35,7 @@ app.get('/blogs', function(req, res){
   Blog.find({}, function(err, docs) {
     res.render('blogs/index', {
       title: 'List of Articles',
-      articles: docs
+      blogs: docs
     });
   });
 });
