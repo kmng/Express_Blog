@@ -1,5 +1,10 @@
-p #{title}
+h1 #{title}
+p List of Blog
 div#blogs
 - each blog in blogs
-  div#blogs
-     #{blog.title}
+	div.blog
+		div.blog_title
+			a(href='/blogs/'+blog._id) #{blog.title}
+		div.blog_body
+		=blog.body
+	a(href='/blogs/'+blog._id+'/edit') Edit
