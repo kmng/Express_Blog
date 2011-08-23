@@ -40,6 +40,12 @@ app.get('/blogs', function(req, res){
   });
 });
 
-app.get();
+// New article
+app.get('/articles/new', function(req, res){
+  res.render('articles/new', {
+    title: 'New Article'
+  });
+});
+
 app.listen(3000);
 
