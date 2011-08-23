@@ -68,11 +68,21 @@ app.post('/blogs', function(req, res){
 
 });
 
-// View an article
+// View a blog
 app.get('/blogs/:id', function(req, res){
   Blog.findOne({_id:req.params.id}, function(err,blog){
     res.render('blogs/show', {
       title: blog.title,
+      blog: blog.doc
+    });
+  });
+});
+
+// Edit a blog
+app.get('/blogs/:id/edit', function(req, res){
+  Blog.findOne({_id:req.params.id}, function(err,blog){
+    res.render('blogs/edit', {
+      title: 'Edit '+blog.doc.title,
       blog: blog.doc
     });
   });

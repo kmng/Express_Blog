@@ -1,0 +1,15 @@
+h1= title
+p Update Blog
+form(method="post", action="/blogs")
+  p
+    label Title
+    input(type="text", name="blog[title]",value=blog.title)
+
+  p 
+    label Body
+    textarea(name="blog[body]") #{blog.body}
+
+
+  input(type="hidden",name="blog[_id]", value="blog._id")
+
+  input(type="submit",value="submit")
