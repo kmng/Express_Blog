@@ -1,6 +1,9 @@
 var express = require('express');
 
-var app = express.createServer();
+var 	app = express.createServer(),
+	models = require('./model.js');
+	
+	Blog = models.Blog;
 
 app.set('view engine', 'jade');
 
