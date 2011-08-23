@@ -1,0 +1,12 @@
+h1= title
+p Create New Blog
+form(method="post", action="/blogs")
+  p
+    label Title
+    input(type="text", name="blog[title]")
+
+  p 
+    label Body
+    textarea(name="blog[body]")
+
+  input(type="submit",value="submit")
