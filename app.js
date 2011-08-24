@@ -88,5 +88,16 @@ app.get('/blogs/:id/edit', function(req, res){
   });
 });
 
+// Delete a blog
+app.del('/blogs/:id', function(req, res){
+  Blog.findOne({_id:req.params.id}, function(err,blog){
+    blog.remove(function(err){
+      console.log(err);
+    });
+  });
+  res.redirect('/blogs');
+});
+
+
 app.listen(3000);
 console.log("Express server listening on port %d", app.address().port)
