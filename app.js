@@ -1,4 +1,4 @@
-process.chdir(__dirname);
+
 
 var express = require('express');
 var MongoStore = require('express-session-mongo');
