@@ -15,7 +15,7 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.cookieParser());
-  app.use(express.session({secret:' keyboard cat',  store: new MongoStore() }));
+  app.use(express.session({secret:' keyboard cat' }));
   app.use(express.compiler({ src: __dirname + '/public', enable: ['sass'] }));
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
