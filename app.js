@@ -1,4 +1,6 @@
 var express = require('express');
+var MongoStore = require('express-session-mongo');
+
 
 var 	app = express.createServer(),
 	models = require('./model.js');
@@ -11,7 +13,7 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.cookieParser());
-  app.use(express.session({ secret: 'your secret here' }));
+  app.use(express.session({secret:' keyboard cat',  store: new MongoStore() }));
   app.use(express.compiler({ src: __dirname + '/public', enable: ['sass'] }));
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
@@ -28,14 +30,18 @@ app.configure('production', function(){
 
 
 app.get('/',function(req,res){
+        req.session.start = 'start';
+        console.log(req.session);
 	res.render('index',{title:'Test',content:'Blog Listing is in '});
 });
 
 app.get('/blogs', function(req, res){
+  console.log(req.session);
   Blog.find({}, function(err, docs) {
     res.render('blogs/index', {
       title: 'List of Blogs',
-      blogs: docs
+      blogs: docs,
+      message : req.session.start
     });
   });
 });

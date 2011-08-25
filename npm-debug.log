@@ -1,0 +1,351 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-d' ]
+info using npm@1.0.12
+info using node@v0.4.8
+verbose config file /home/user/.npmrc
+verbose config file /usr/local/etc/npmrc
+silly testEngine { name: 'application-name',
+silly testEngine   version: '0.0.1',
+silly testEngine   private: true,
+silly testEngine   dependencies: { express: '2.4.2', jade: '>= 0.0.1' },
+silly testEngine   _id: 'application-name@0.0.1',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.12',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /home/user/Dropbox/Express_Blog/package.json
+verbose loadDefaults application-name@0.0.1
+verbose where, deps [ '/home/user/Dropbox/Express_Blog',
+verbose where, deps   [ 'express', 'jade' ] ]
+verbose from cache /home/user/Dropbox/Express_Blog/package.json
+info preinstall application-name@0.0.1
+silly testEngine { name: 'jade',
+silly testEngine   description: 'Jade template engine',
+silly testEngine   version: '0.14.2',
+silly testEngine   author: 
+silly testEngine    { name: 'TJ Holowaychuk',
+silly testEngine      email: 'tj@vision-media.ca' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/visionmedia/jade.git' },
+silly testEngine   main: './index.js',
+silly testEngine   bin: { jade: './bin/jade' },
+silly testEngine   devDependencies: 
+silly testEngine    { expresso: '0.6.4',
+silly testEngine      'coffee-script': '>= 0.0.1',
+silly testEngine      sass: '>= 0.0.1',
+silly testEngine      less: '>= 0.0.1',
+silly testEngine      markdown: '>= 0.0.1',
+silly testEngine      stylus: '>= 0.0.1' },
+silly testEngine   scripts: { prepublish: 'npm prune' },
+silly testEngine   engines: { node: '>= 0.1.98' },
+silly testEngine   _id: 'jade@0.14.2',
+silly testEngine   dependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.12',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/user/Dropbox/Express_Blog/node_modules/jade/package.json
+verbose loadDefaults jade@0.14.2
+silly testEngine { name: 'express',
+silly testEngine   description: 'Sinatra inspired web development framework',
+silly testEngine   version: '2.4.2',
+silly testEngine   author: 
+silly testEngine    { name: 'TJ Holowaychuk',
+silly testEngine      email: 'tj@vision-media.ca' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'TJ Holowaychuk',
+silly testEngine        email: 'tj@vision-media.ca' },
+silly testEngine      { name: 'Aaron Heckmann',
+silly testEngine        email: 'aaron.heckmann+github@gmail.com' },
+silly testEngine      { name: 'Ciaran Jessup', email: 'ciaranj@gmail.com' },
+silly testEngine      { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' } ],
+silly testEngine   dependencies: 
+silly testEngine    { connect: '>= 1.5.2 < 2.0.0',
+silly testEngine      mime: '>= 0.0.1',
+silly testEngine      qs: '>= 0.0.6' },
+silly testEngine   devDependencies: 
+silly testEngine    { 'connect-form': '0.2.1',
+silly testEngine      ejs: '0.4.2',
+silly testEngine      expresso: '0.7.2',
+silly testEngine      hamljs: '0.5.1',
+silly testEngine      jade: '0.11.0',
+silly testEngine      stylus: '0.13.0',
+silly testEngine      should: '0.2.1',
+silly testEngine      'express-messages': '0.0.2',
+silly testEngine      'node-markdown': '>= 0.0.1',
+silly testEngine      'connect-redis': '>= 0.0.1' },
+silly testEngine   keywords: [ 'framework', 'sinatra', 'web', 'rest', 'restful' ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/visionmedia/express.git' },
+silly testEngine   main: 'index',
+silly testEngine   bin: { express: './bin/express' },
+silly testEngine   scripts: { test: 'make test', prepublish: 'npm prune' },
+silly testEngine   engines: { node: '>= 0.4.1 < 0.5.0' },
+silly testEngine   _id: 'express@2.4.2',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.12',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/user/Dropbox/Express_Blog/node_modules/express/package.json
+verbose loadDefaults express@2.4.2
+silly testEngine { name: 'mongodb',
+silly testEngine   description: 'A node.js driver for MongoDB',
+silly testEngine   keywords: [ 'mongodb', 'mongo', 'driver', 'db' ],
+silly testEngine   version: '0.9.6-11',
+silly testEngine   author: 
+silly testEngine    { name: 'Christian Amor Kvalheim',
+silly testEngine      email: 'christkv@gmail.com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Aaron Heckmann' },
+silly testEngine      { name: 'Christoph Pojer' },
+silly testEngine      { name: 'Pau Ramon Revilla' },
+silly testEngine      { name: 'Nathan White' },
+silly testEngine      { name: 'Emmerman' },
+silly testEngine      { name: 'Seth LaForge' },
+silly testEngine      { name: 'Boris Filipov' },
+silly testEngine      { name: 'Stefan Schärmeli' },
+silly testEngine      { name: 'Tedde Lundgren' },
+silly testEngine      { name: 'renctan' },
+silly testEngine      { name: 'Sergey Ukustov' },
+silly testEngine      { name: 'Ciaran Jessup' },
+silly testEngine      { name: 'kuno' },
+silly testEngine      { name: 'srimonti' },
+silly testEngine      { name: 'Erik Abele' },
+silly testEngine      { name: 'Pratik Daga' },
+silly testEngine      { name: 'Slobodan Utvic' },
+silly testEngine      { name: 'Kristina Chodorow' },
+silly testEngine      { name: 'Yonathan Randolph' },
+silly testEngine      { name: 'Brian Noguchi' },
+silly testEngine      { name: 'Sam Epstein' },
+silly testEngine      { name: 'James Harrison Fisher' },
+silly testEngine      { name: 'Vladimir Dronnikov' },
+silly testEngine      { name: 'Ben Hockey' },
+silly testEngine      { name: 'Henrik Johansson' },
+silly testEngine      { name: 'Simon Weare' },
+silly testEngine      { name: 'Alex Gorbatchev' },
+silly testEngine      { name: 'Shimon Doodkin' },
+silly testEngine      { name: 'Kyle Mueller' },
+silly testEngine      { name: 'Eran Hammer-Lahav' },
+silly testEngine      { name: 'Marcin Ciszak' },
+silly testEngine      { name: 'François de Metz' },
+silly testEngine      { name: 'Vinay Pulim' },
+silly testEngine      { name: 'nstielau' },
+silly testEngine      { name: 'Adam Wiggins' },
+silly testEngine      { name: 'entrinzikyl' },
+silly testEngine      { name: 'Jeremy Selier' },
+silly testEngine      { name: 'Ian Millington' },
+silly testEngine      { name: 'Public Keating' },
+silly testEngine      { name: 'andrewjstone' },
+silly testEngine      { name: 'Christopher Stott' },
+silly testEngine      { name: 'Corey Jewett' },
+silly testEngine      { name: 'brettkiefer' },
+silly testEngine      { name: 'Rob Holland' },
+silly testEngine      { name: 'Senmiao Liu' },
+silly testEngine      { name: 'heroic' },
+silly testEngine      { name: 'gitfy' } ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/christkv/node-mongodb-native.git' },
+silly testEngine   bugs: 
+silly testEngine    { email: 'node-mongodb-native@googlegroups.com',
+silly testEngine      url: 'http://github.com/christkv/node-mongodb-native/issues' },
+silly testEngine   os: [ 'linux', 'darwin', 'freebsd' ],
+silly testEngine   config: { native: false },
+silly testEngine   main: './lib/mongodb/index',
+silly testEngine   directories: { lib: './lib/mongodb' },
+silly testEngine   engines: { node: '>=0.4.0' },
+silly testEngine   scripts: { install: 'bash ./install.sh' },
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'Apache License, Version 2.0',
+silly testEngine        url: 'http://www.apache.org/licenses/LICENSE-2.0' } ],
+silly testEngine   _id: 'mongodb@0.9.6-11',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.12',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/user/Dropbox/Express_Blog/node_modules/mongodb/package.json
+verbose loadDefaults mongodb@0.9.6-11
+silly testEngine { name: 'mongojs',
+silly testEngine   description: 'a simple mongo module that implements the mongo api',
+silly testEngine   keywords: [ 'mongo', 'db', 'mongodb' ],
+silly testEngine   version: '0.2.0',
+silly testEngine   homepage: 'https://github.com/gett/mongojs',
+silly testEngine   author: { name: 'Ge.tt', email: 'hello@ge.tt' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Mathias Buus Madsen', email: 'm@ge.tt' },
+silly testEngine      { name: 'Ian Jorgensen' } ],
+silly testEngine   main: './index.js',
+silly testEngine   dependencies: { common: '>=0.1.0', mongodb: '>=0.8.0' },
+silly testEngine   _id: 'mongojs@0.2.0',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.12',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/user/Dropbox/Express_Blog/node_modules/mongojs/package.json
+verbose loadDefaults mongojs@0.2.0
+silly testEngine { name: 'mongoose',
+silly testEngine   description: 'Mongoose MongoDB ORM',
+silly testEngine   version: '1.8.4',
+silly testEngine   author: 
+silly testEngine    { name: 'Guillermo Rauch',
+silly testEngine      email: 'guillermo@learnboost.com' },
+silly testEngine   keywords: 
+silly testEngine    [ 'mongodb',
+silly testEngine      'mongoose',
+silly testEngine      'orm',
+silly testEngine      'data',
+silly testEngine      'datastore',
+silly testEngine      'nosql' ],
+silly testEngine   dependencies: { hooks: '0.1.9', mongodb: '0.9.6-7', colors: '0.5.0' },
+silly testEngine   devDependencies: { should: '0.2.1' },
+silly testEngine   directories: { lib: './lib/mongoose' },
+silly testEngine   scripts: { test: 'make test' },
+silly testEngine   main: './index.js',
+silly testEngine   engines: { node: '>= 0.2.0' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/LearnBoost/mongoose.git' },
+silly testEngine   _id: 'mongoose@1.8.4',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.12',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/user/Dropbox/Express_Blog/node_modules/mongoose/package.json
+verbose loadDefaults mongoose@1.8.4
+silly testEngine { name: 'express-session-mongo',
+silly testEngine   version: '0.0.1',
+silly testEngine   description: 'MongoDB Session Store for ExpressJS',
+silly testEngine   author: { name: 'Dav Glass', email: 'davglass@gmail.com' },
+silly testEngine   bugs: { url: 'http://github.com/davglass/express-session-mongo/issues' },
+silly testEngine   os: [ 'darwin', 'linux' ],
+silly testEngine   engines: { node: '>=0.2.0' },
+silly testEngine   directories: { lib: 'lib' },
+silly testEngine   main: './lib/express-session-mongo',
+silly testEngine   dependencies: 
+silly testEngine    { express: '>=1.0.0rc4',
+silly testEngine      connect: '>=0.2.4',
+silly testEngine      mongodb: '>=0.7.9' },
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'BSD',
+silly testEngine        url: 'http://github.com/davglass/express-session-mongo/blob/master/LICENSE' } ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/davglass/express-session-mongo.git' },
+silly testEngine   _id: 'express-session-mongo@0.0.1',
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.12',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/user/Dropbox/Express_Blog/node_modules/express-session-mongo/package.json
+verbose loadDefaults express-session-mongo@0.0.1
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/home/user/Dropbox/Express_Blog/node_modules/bson/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'bson',
+silly testEngine   version: '0.0.3',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/0ctave/node-bson.git' },
+silly testEngine   description: 'BSON library for node',
+silly testEngine   author: 
+silly testEngine    { name: 'Christian Amor Kvalheim',
+silly testEngine      email: 'christkv@gmail.com' },
+silly testEngine   contributors: [ { name: 'Yuri Bogdanov', email: 'chinsay@gmail.com' } ],
+silly testEngine   scripts: { install: 'make all' },
+silly testEngine   main: './bson.node',
+silly testEngine   engines: { node: '>=0.4.0' },
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'bson@0.0.3',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.12',
+silly testEngine   _nodeVersion: 'v0.4.8',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /home/user/Dropbox/Express_Blog/node_modules/bson/package.json
+verbose loadDefaults bson@0.0.3
+verbose from cache /home/user/Dropbox/Express_Blog/package.json
+verbose into /home/user/Dropbox/Express_Blog [ 'express@2.4.2', 'jade@>= 0.0.1' ]
+verbose from cache /home/user/Dropbox/Express_Blog/node_modules/jade/package.json
+verbose from cache /home/user/Dropbox/Express_Blog/node_modules/express/package.json
+verbose from cache /home/user/Dropbox/Express_Blog/node_modules/mongodb/package.json
+verbose from cache /home/user/Dropbox/Express_Blog/node_modules/bson/package.json
+verbose from cache /home/user/Dropbox/Express_Blog/node_modules/mongojs/package.json
+verbose from cache /home/user/Dropbox/Express_Blog/node_modules/mongoose/package.json
+verbose from cache /home/user/Dropbox/Express_Blog/node_modules/express-session-mongo/package.json
+verbose already installed in /home/user/Dropbox/Express_Blog skipping express@2.4.2
+verbose already installed in /home/user/Dropbox/Express_Blog skipping jade@>= 0.0.1
+silly resolved []
+info build /home/user/Dropbox/Express_Blog
+verbose from cache /home/user/Dropbox/Express_Blog/package.json
+verbose linkStuff [ false, false, false, '/home/user/Dropbox' ]
+info linkStuff application-name@0.0.1
+verbose linkBins application-name@0.0.1
+verbose linkMans application-name@0.0.1
+verbose rebuildBundles application-name@0.0.1
+verbose rebuildBundles [ 'jade',
+verbose rebuildBundles   'express',
+verbose rebuildBundles   'mongodb',
+verbose rebuildBundles   '.bin',
+verbose rebuildBundles   'bson',
+verbose rebuildBundles   'mongojs',
+verbose rebuildBundles   'mongoose',
+verbose rebuildBundles   'express-session-mongo' ]
+verbose rebuild bundle /home/user/Dropbox/Express_Blog/node_modules/mongodb
+info build /home/user/Dropbox/Express_Blog/node_modules/mongodb
+verbose from cache /home/user/Dropbox/Express_Blog/node_modules/mongodb/package.json
+info preinstall mongodb@0.9.6-11
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/user/Dropbox/Express_Blog/node_modules' ]
+info linkStuff mongodb@0.9.6-11
+verbose linkBins mongodb@0.9.6-11
+verbose linkMans mongodb@0.9.6-11
+verbose rebuildBundles mongodb@0.9.6-11
+info install mongodb@0.9.6-11
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "bash ./install.sh"
+info postinstall mongodb@0.9.6-11
+verbose rebuild bundle /home/user/Dropbox/Express_Blog/node_modules/bson
+info build /home/user/Dropbox/Express_Blog/node_modules/bson
+verbose from cache /home/user/Dropbox/Express_Blog/node_modules/bson/package.json
+info preinstall bson@0.0.3
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/user/Dropbox/Express_Blog/node_modules' ]
+info linkStuff bson@0.0.3
+verbose linkBins bson@0.0.3
+verbose linkMans bson@0.0.3
+verbose rebuildBundles bson@0.0.3
+info install bson@0.0.3
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "make all"
+info bson@0.0.3 Failed to exec install script
+ERR! bson@0.0.3 install: `make all`
+ERR! `sh "-c" "make all"` failed with 2
+ERR! 
+ERR! Failed at the bson@0.0.3 install script.
+ERR! This is most likely a problem with the bson package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     make all
+ERR! You can get their info via:
+ERR!     npm owner ls bson
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Linux 2.6.29.4-167.fc11.i586
+ERR! command "node" "/usr/local/bin/npm" "install" "-d"
+verbose exit [ 1, true ]
