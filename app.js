@@ -1,8 +1,6 @@
 
 
 var express = require('express');
-var MongoStore = require('express-session-mongo');
-
 
 var 	app = express.createServer(),
 	models = require('./model.js');
